@@ -1,0 +1,113 @@
+.container  {
+  width: 1140px;
+  margin: 0 auto;
+
+}
+
+.html{
+  height: 100%;
+}
+
+.body{
+  display: flex;
+  flex-direction: column;
+min-height: 100vh;
+}
+
+.all{
+  flex:1;
+}
+
+.flex {
+  display: flex;
+  height: 100%;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.box_header {
+  background: rgb(234, 216, 216);
+  width: 100%;
+  height: 20%;
+  border-radius: 7px;
+}
+
+.fullbox_info {
+  width: 100%;
+  height: 20%;
+}
+
+.flex1 {
+  display: flex;
+  height: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.ava {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.ava img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+
+.name{
+  background-color: salmon;
+  width: 60%;
+  border-radius: 7px;
+}
+
+.social {
+  width: 20%;
+  background-color:blueviolet;
+  border-radius: 7px;
+}
+
+.social ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.social li {
+  list-style-type: none;
+}
+
+.flex2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box {
+  background: rgb(234, 216, 216);
+  width: 48%;
+  height: 80px;
+  border-radius: 7px;
+  margin-bottom: 42px;
+}
+
+button {
+  border: none;
+  background:  rgb(118, 118, 235);
+  color: #fff;
+  border-radius: 5px;
+  height: 20px;
+  width: 170px;
+  cursor: pointer;
+}
+.footer {
+background: #333;
+flex-shrink: 0;
+color:yellow
+}
