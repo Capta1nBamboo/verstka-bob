@@ -1,47 +1,46 @@
-.container  {
-  width: 1140px;
-  margin: 0 auto;
-
+html{
+  height: 100%;
+  overflow-x: hidden;
 }
 
-.html{
+body{
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
-.body{
-  display: flex;
-  flex-direction: column;
-min-height: 100vh;
+.container  {
+  width: 1140px;
+  margin: 0 auto;
 }
 
-.all{
-  flex:1;
+.main-content {
+  flex: 1 0 auto;
+  margin-top: 20px;
+}
+
+header {
+  flex: 0 0 auto;
 }
 
 .flex {
   display: flex;
   height: 100%;
-  padding: 20px;
   flex-direction: column;
 }
 
 .box_header {
+  margin-top: 20px;
   background: rgb(234, 216, 216);
-  width: 100%;
-  height: 20%;
+  height: 100px;
   border-radius: 7px;
 }
 
-.fullbox_info {
-  width: 100%;
-  height: 20%;
-}
 
 .flex1 {
   display: flex;
-  height: 100%;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  height: 100px;
+  margin-bottom: 20px;
 }
 
 .ava {
@@ -58,7 +57,6 @@ min-height: 100vh;
   height: 100%;
   border-radius: 100%;
 }
-
 
 .name{
   background-color: salmon;
@@ -87,14 +85,16 @@ min-height: 100vh;
 .flex2 {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
 }
-.box {
+
+.banner {
   background: rgb(234, 216, 216);
-  width: 48%;
-  height: 80px;
+  width: 49%;
+  height: 140px;
   border-radius: 7px;
-  margin-bottom: 42px;
+  margin-bottom: 20px;
 }
 
 button {
@@ -106,8 +106,38 @@ button {
   width: 170px;
   cursor: pointer;
 }
-.footer {
-background: #333;
-flex-shrink: 0;
-color:yellow
+
+footer {
+  background: #333;
+  flex-shrink: 0;
+  color:yellow;
+  height: 70px;
+  padding: 0;
+  width: 100%;
+  flex: 0 0 auto;
+  margin-top: 5%;
 }
+
+/* media */
+
+@media screen and (max-width: 768px) {
+  /* .flex2 {
+    flex-direction: column;
+  } */
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .flex2 
+    {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    button {
+      width: auto;
+    }
+  }
