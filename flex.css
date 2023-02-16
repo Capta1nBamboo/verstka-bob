@@ -31,10 +31,15 @@ header {
 
 .box_header {
   margin-top: 20px;
-  background: rgb(234, 216, 216);
-  height: 100px;
   border-radius: 7px;
-}
+  width: 100%;
+  overflow: hidden;
+  height: 100px;
+} 
+
+/* .box_header img {
+  border-radius: 7px;
+} */
 
 
 .flex1 {
