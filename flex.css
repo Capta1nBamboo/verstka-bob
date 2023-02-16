@@ -66,7 +66,9 @@ header {
 .name{
   background-color: salmon;
   width: 60%;
+  height: 100%;
   border-radius: 7px;
+  line-height: 80%;
 }
 
 .social {
@@ -103,11 +105,11 @@ header {
 }
 
 button {
+  display: flex;
   border: none;
   background:  rgb(118, 118, 235);
   color: #fff;
   border-radius: 5px;
-  height: 20px;
   width: 170px;
   cursor: pointer;
 }
