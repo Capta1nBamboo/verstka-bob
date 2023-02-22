@@ -88,6 +88,10 @@ header {
 .social li {
   list-style-type: none;
 }
+.social img {
+height: 35px;
+}
+
 
 .flex2 {
   display: flex;
