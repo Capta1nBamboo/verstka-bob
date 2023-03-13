@@ -1,4 +1,11 @@
-html{
+/* reset */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+html {
   height: 100%;
   overflow-x: hidden;
 }
@@ -47,13 +54,12 @@ header {
   display: flex;
   width: 1132px;
   height: 234px;
-  margin-bottom: 40px;
 }
 
 .ava {
   display: flex;
-  width: 178px;
-  height: 178px;
+  width: 171px;
+  height: 151px;
   justify-content: center;
   align-items: center;
   border-radius: 100%;
@@ -141,6 +147,7 @@ width: 24px;
   height: 270px;
   border-radius: 25px;
   margin-bottom: 60px;
+  cursor: pointer;
 }
 
 .add_banner {
@@ -159,8 +166,7 @@ width: 24px;
   margin-left: 50%;
   color:grey;
   font-size: 40px;
-  font-family:monospace;
-  
+  cursor: pointer;
 }
 
 
@@ -171,7 +177,6 @@ footer {
   margin-top: 5%;
   width: 100%;
   padding: 0%;
-  flex-shrink: 0;
 
 }
 
@@ -191,35 +196,29 @@ footer {
   height: 24px;
   width: 24px;
 }
-/* reset */
-* {
-	padding: 0px;
-	margin: 0px;
-	border: none;
-}
-/* media */
 
-@media screen and (max-width: 768px) {
-  /* .flex2 {
+@media only screen and (max-width: 768px)  {
+  .flex2 {
     flex-direction: column;
-  } */
-
+  }
   .container {
     width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .flex2 
-    {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    .main-content 
-    {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
+  .flex2 {
+    display: flex;
+    flex-direction: column;
+    
   }
+  .banner {
+    width: 100%;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
