@@ -11,13 +11,14 @@ html {
 }
 
 body{
+  width: 100%;
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
 .container  {
-  width: 1140px;
+  width: 1132px;
   margin: 0 auto;
 }
 
@@ -40,9 +41,7 @@ header {
   background-color:#dddddd;
   margin-top: 20px;
   border-radius: 20px;
-  width: 1132px;
   height: 234px;
-  overflow: hidden;
 } 
 
 /* .box_header img {
@@ -52,7 +51,6 @@ header {
 
 .flex1 {
   display: flex;
-  width: 1132px;
   height: 234px;
 }
 
@@ -96,8 +94,6 @@ button {
   display: flex;
   margin-top: 5%;
   margin-left: 5%;
-  padding-top: 8px;
-  padding-left: 10px;
   background:  rgb(123, 176, 265);
   color:white;
   border-radius: 22px;
@@ -106,9 +102,15 @@ button {
   cursor: pointer;
 }
 
+button p{
+  padding: 10 10 10 30;
+ font-family: monospace;
+ font-size: 19.77px!important;
+
+}
 
 .social {
-  width: 20%;
+  width: 18%;
   background-color:white;
   border-radius: 7px;
 }
@@ -121,7 +123,8 @@ button {
 }
 .social li{
 padding-top: 25%;
-padding-left: 21px;
+padding-right: 5%;
+padding-left: 10px;
 }
 
 .social img {
@@ -198,21 +201,29 @@ footer {
 }
 
 @media only screen and (max-width: 768px)  {
-  .flex2 {
-    flex-direction: column;
+  .box_header{
+    width:100%;
+
+  }
+  .flex1 {
+    padding: 50px;
+    width: 100%;
   }
   .container {
     width: 100%;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
   }
   .flex2 {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
   }
   .banner {
+    width: 100%;
+  } 
+  .add_banner {
     width: 100%;
   }
   .main-content {
@@ -221,4 +232,13 @@ footer {
     flex-wrap: wrap;
     width: 100%;
   }
+  .social-footer ul{
+    width: 100%;
+  }
+  footer{
+    width: auto;
+  }
+  .social ul {
+  width: 0%;
+
 }
