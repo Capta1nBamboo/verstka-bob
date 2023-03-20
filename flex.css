@@ -28,6 +28,7 @@ body{
 }
 
 header {
+  display: flex;
   flex: 0 0 auto;
 }
 
@@ -39,9 +40,12 @@ header {
 
 .box_header {
   background-color:#dddddd;
-  margin-top: 20px;
+  margin-top: 20px!important;
   border-radius: 20px;
   height: 234px;
+  width: 1132px;
+  margin: auto;
+  
 } 
 
 /* .box_header img {
@@ -109,32 +113,29 @@ button p{
 
 }
 
-.social {
+.social_icons {
   width: 18%;
   background-color:white;
   border-radius: 7px;
 }
 
-.social ul {
+.social_icons ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
   list-style-type: none;
 }
-.social li{
+.social_icons li{
 padding-top: 25%;
 padding-right: 5%;
 padding-left: 10px;
+padding-left: 1,5px;
 }
 
-.social img {
+.social_icons img {
 height: 24px;
 width: 24px;
 
-}
-
-.social li{
-  padding-left: 1,5px;
 }
 
 .flex2 {
@@ -171,8 +172,6 @@ width: 24px;
   font-size: 40px;
   cursor: pointer;
 }
-
-
 footer {
   display: flex;
   justify-content: center;
@@ -201,20 +200,20 @@ footer {
 }
 
 @media only screen and (max-width: 768px)  {
+ 
   .box_header{
-    width:100%;
-
+    margin: 15px;
+    width: 100%;
   }
   .flex1 {
-    padding: 50px;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;  
   }
   .container {
+    margin: 15px;
     width: 100%;
-    padding: 15px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
   }
   .flex2 {
     display: flex;
@@ -238,7 +237,78 @@ footer {
   footer{
     width: auto;
   }
-  .social ul {
+  .social_icons img{
+  width: 45px;
+  height: 45px;
+  }
+  .name{
+  width: 60%;
+  height: 50%;
+  margin-left: 60px;
+  margin-bottom: 50px;
+  }
+  .ava {
+  margin-left: 10px;
+  }
+  .social_icons{
+  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  }
+  .social_icons ul {
+  margin-left: 100%;
   width: 0%;
-
+  }
+  .social_icons ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .social_icons li{
+  margin-left: 15px;
+  }
+  button{
+  margin-top: 20px;
+  margin-left: 145px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+ .box_header{
+  width: 100%;
+  margin: 15px;
+  }
+  .container{
+  width: 100%;
+  }
+  .banner{
+  margin: 15px;
+  width: 47%;
+  }
+  .add_banner {
+  margin-right: 15px;
+  margin-top: 15px;
+  width: 47%;
+  }
+  .flex1{
+  height: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  }
+  .name {
+  width: 60%;
+  }
+  .social_icons img{
+  width: 40px;
+  height: 40px;
+  }
+  .social_icons ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  footer {
+  width: 100%;}
 }
