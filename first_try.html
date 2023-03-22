@@ -43,7 +43,14 @@
               </div>
           </div>
           <div class="flex2">
+            <a class="popup-open" href="#">
             <div class="banner"></div>
+            <div class="popup-fade">
+              <div class="popup">
+                <a class="popup-close" href="#">X</a>
+                <p>DIMONNNNN TUTUTUTUTU</p>
+              </div>		
+            </div>
             <div class="banner"></div>
             <div class="banner"></div>
             <div class="banner"></div>
@@ -66,5 +73,39 @@
       </ul>
     </div>
   </footer>
+  <script>
+  window.addEventListener('DOMContentLoaded', function () {
+  const popupOpen = document.querySelector('.popup-open');
+  const popupClose = document.querySelector('.popup-close');
+  const popupFade = document.querySelector('.popup-fade');
+  const popup = document.querySelector('.popup');
+
+  popupOpen.addEventListener('click', function (event) {
+    event.preventDefault();
+    document.body.style.overflow = 'hidden';
+    popupFade.style.display = 'block';
+  });
+
+  popupClose.addEventListener('click', function (event) {
+    event.preventDefault();
+    document.body.style.overflow = 'auto';
+    popupFade.style.display = 'none';
+  });
+
+  popupFade.addEventListener('click', function (event) {
+    if (event.target === popupFade) {
+      document.body.style.overflow = 'auto';
+      popupFade.style.display = 'none';
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.keyCode === 27) {
+      document.body.style.overflow = 'auto';
+      popupFade.style.display = 'none';
+    }
+  });
+});
+</script>
 </body>
 </html>
