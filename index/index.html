@@ -1,52 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-    <link href="index.css" rel="stylesheet" type="text/css">    
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <link href="index.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>idi nahuy</title>
 </head>
 <body>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="?">Главная</a></li>
-          <li><a href="?">О нас</a></li>
-          <li><a href="?">Личный кабинет</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="info-avatar-container">
-        <div class="info">
-          <h1>Заголовок страницы</h1>
-          <p>Info</p>
-        </div>
-        <div class="avatar">
-          <img src="ava.jpeg" alt="Аватар">
-        </div>
-      </div>
-      <div id="banner-container">
-        <div class="banner"></div>
-        <div class="banner"></div>
-        <div class="banner"></div>
-        <div class="banner"></div>
-        <div class="banner"></div>
-        <div class="banner"></div>
-        <div class="banner"></div>
-        <div class="banner"></div>
-        <div class="banner"></div>
-        <div class="banner"></div>
-        <div class="banner"></div>
-        <div class="banner"></div>
-      </div>
-    </main>
-  </body>
-</html>
+  <header>
+      <div class="box_header"></div>
+  </header>
+  <div class="main-content">
+        <div class="container">
+          <div class="flex">
+              <div class="flex1">
+                <div class="name"> 
+                  <h2>
+                    Онлайн-<span class="names2w">портфолио</span>
+                    для дизайнеров
+                  </h2>
+                  <p>
+                    Загружай работы и демонстрируй заказчику
+                    в удобном формате
+                  </p>
+                  <button>
+                    <p>
+                      Начать
+                    </p>
+                  </button>
+                </div>
+                <div class="ava"> 
+                <!-- <img src="egg.png" alt=""> -->
+              </div>
+              </div>
+              <div class="flex2">
+              <div class="banner">
+                <div class="back_banner">
+                  <img src="logokur.png" alt="">
+                  <p>Мини-курс по работе с тенью,
+                    светом и отражением</p>
+                    <a href="#" class="banner_butt">Подробнее</a>
+                </div>
+              </div>
+              <div class="banner"></div>
+              <div class="banner"></div>
+              <div class="banner"></div>
+              <div class="banner"></div>
+              <div class="banner"></div>
+              <div class="banner"></div>
+              <div class="banner"></div>
+              <div class="banner"></div>
+              <div class="banner"></div>
+              <div class="banner"></div>
+              <div class="banner"></div>
+            </div>
+  </div>
+  </div>
+  <footer>
+    <div class="social-footer">
+      <ul>
+        <li><a href="#"><img src="vk-bottom.png" alt=""></a></li>
+        <li><a href="#"><img src="ok-bottom.png" alt=""></a></li>
+        <li><a href="#"><img src="mail-bottom.png" alt=""></a></li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+  window.addEventListener('DOMContentLoaded', function () {
+  const popupOpen = document.querySelector('.popup-open');
+  const popupClose = document.querySelector('.popup-close');
+  const popupFade = document.querySelector('.popup-fade');
+  const popup = document.querySelector('.popup');
 
-    
+  popupOpen.addEventListener('click', function (event) {
+    event.preventDefault();
+    document.body.style.overflow = 'hidden';
+    popupFade.style.display = 'block';
+  });
+
+  popupClose.addEventListener('click', function (event) {
+    event.preventDefault();
+    document.body.style.overflow = 'auto';
+    popupFade.style.display = 'none';
+  });
+
+  popupFade.addEventListener('click', function (event) {
+    if (event.target === popupFade) {
+      document.body.style.overflow = 'auto';
+      popupFade.style.display = 'none';
+    }
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.keyCode === 27) {
+      document.body.style.overflow = 'auto';
+      popupFade.style.display = 'none';
+    }
+  });
+});
+
+</script>
 </body>
 </html>
