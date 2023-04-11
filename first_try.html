@@ -1,6 +1,6 @@
 <html>
-<link href="flex.css" rel="stylesheet" type="text/css">
 <head>
+  <link href="flex.css" rel="stylesheet" type="text/css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,8 @@
 <body>
   <header>
      <!-- <div class="container"> -->
-      <div class="box_header">
+        <div class="box_header">
+          <a href="index/index.html">шышь</a>
     </div>
     <!-- </div> -->
   </header>
@@ -35,7 +36,7 @@
             </div>
               <div class="social_icons">
                 <ul>
-                  <li><a href="$"><img src="vk-top.png    " alt=""></a></li>
+                  <li><a href="$"><img src="vk-top.png" alt=""></a></li>
                   <li><a href="https://t.me/nikitashtb"><img src="tg-top.png" alt=""></a></li>
                   <li><a href="#"><img src="ok-top.png" alt=""></a></li>
                   <li><a href="#"><img src="mail-top.png" alt=""></a></li>
@@ -74,40 +75,6 @@
       </ul>
     </div>
   </footer>
-  <script>
-  window.addEventListener('DOMContentLoaded', function () {
-  const popupOpen = document.querySelector('.popup-open');
-  const popupClose = document.querySelector('.popup-close');
-  const popupFade = document.querySelector('.popup-fade');
-  const popup = document.querySelector('.popup');
-
-  popupOpen.addEventListener('click', function (event) {
-    event.preventDefault();
-    document.body.style.overflow = 'hidden';
-    popupFade.style.display = 'block';
-  });
-
-  popupClose.addEventListener('click', function (event) {
-    event.preventDefault();
-    document.body.style.overflow = 'auto';
-    popupFade.style.display = 'none';
-  });
-
-  popupFade.addEventListener('click', function (event) {
-    if (event.target === popupFade) {
-      document.body.style.overflow = 'auto';
-      popupFade.style.display = 'none';
-    }
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.keyCode === 27) {
-      document.body.style.overflow = 'auto';
-      popupFade.style.display = 'none';
-    }
-  });
-});
-
-</script>
+  <script src="script.js"></script>
 </body>
 </html>

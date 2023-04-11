@@ -41,15 +41,26 @@ header {
 
 .box_header {
   background: url(./header.jpg);
-  background-size: cover;
+  background-size:cover;
+  background-position: 1;
+  background-repeat: no-repeat;
   margin-top: 20px!important;
   border-radius: 20px;
   height: 234px;
   width: 1132px;
   margin: auto;
+  text-indent: -999999px;
   
 } 
 
+.box_header a {
+  position: absolute; 
+  display: block; 
+  height: 234px; 
+  width: 1132px;
+  border-radius: 20px;
+  z-index: 1; 
+}
 
 .flex1 {
   display: flex;
@@ -109,7 +120,7 @@ button {
 }
 
 button p{
-  padding: 10 10 10 42px;
+  padding: 10 10 10 40px;
  font-family: monospace;
  font-size: 18px!important;
 

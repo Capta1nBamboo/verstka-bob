@@ -46,8 +46,17 @@ header {
   height: 234px;
   width: 1132px;
   margin: auto;
+  text-indent: -999999px;
   
 } 
+.box_header a {
+  position: absolute; 
+  display: block; 
+  height: 234px; 
+  width: 1132px;
+  border-radius: 20px;
+  z-index: 1; 
+}
 
 
 .flex1 {
@@ -105,7 +114,7 @@ button {
 }
 
 button p{
-  padding: 10 10 10 30;
+  padding: 10 10 10 20;
  font-family: monospace;
  font-size: 19.77px!important;
 
@@ -198,10 +207,11 @@ footer {
   height: 24px;
   width: 24px;
 }
-.popup-fade {
-	display: none;
-}
-.popup-fade:before {
+ .popup-fade {
+    display: none;
+  }
+
+ .popup-fade:before {
 	content: '';
 	background: #000;
 	position: fixed; 
@@ -232,7 +242,11 @@ footer {
 	right: 10px;
   text-decoration: none;
   font-size: 15px;
-} 
+}
+.popup-open {
+  display: block;
+  width: 100%;
+  height: 100%;}
 
 @media only screen and (max-width: 768px)  {
  
@@ -308,15 +322,48 @@ footer {
   margin-top: 20px;
   margin-left: 145px;
   }
-  .popup {
-
-    display: flex;
-    height: 330px;
-    width: 560px;
-    background-color: white;
-    
+   .popup-fade {
+    display: none;
   }
-}
+
+  .popup-fade:before {
+	content: '';
+	background: #000;
+	position: fixed; 
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	opacity: 0.7;
+	z-index: 9999;
+  }
+  .popup {
+	position: fixed;
+  margin:auto;
+  left: 0;
+  right: 0;
+  bottom: 25%;
+  height: 360px;
+	width: 560px;	
+	background: #fff;
+	border-radius: 12px; 
+	z-index: 99999;
+	opacity: 1;	
+  }
+  .popup-close {
+  overflow: hidden;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  }
+  .popup-open {
+  display: block;
+  width: 100%;
+  height: 100%;}
+
+  }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
  .box_header{
   width: 100%;
