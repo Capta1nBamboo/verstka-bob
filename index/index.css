@@ -40,7 +40,7 @@ header {
 }
 
 .box_header {
-  background: url(./header.jpg);
+  background: url(header.hui.jpg);
   background-size:cover;
   background-position: 1;
   background-repeat: no-repeat;
@@ -64,14 +64,17 @@ header {
 
 .flex1 {
   display: flex;
-  height: 234px;
+  height: auto;
+  margin-bottom: 15%;
 
 }
 
 .ava {
   display: flex;
-  width: 171px;
-  height: 151px;
+  margin-top: 60px;
+  margin-right: 125px;
+  width: 348px;
+  height: 355px;
   justify-content: center;
   align-items: center;
   border-radius: 100%;
@@ -79,8 +82,8 @@ header {
 }
 
 .ava img {
-  width: 178px;
-  height: 178px;
+  width: 348px;
+  height: 355px;
   border-radius: 100%;
 }
 
@@ -92,16 +95,14 @@ header {
 }
 
 .name h2 { 
-  width: auto; 
-  margin-top: 5%;
-  margin-left: 5%;
-  font-size: 35px;
+  width: 600px; 
+  margin-top: 60px;
+  font-size: 60px;
 }
 .name p { 
-  width: auto; 
-  margin-top: 0%;
-  margin-left: 5%;
-  font-size: 25px;
+  width: 430px; 
+  margin-top: 4%;
+  font-size: 22px;
 }
 .names2w {
   color: rgb(123, 176, 265);
@@ -110,7 +111,6 @@ header {
 button {
   display: flex;
   margin-top: 5%;
-  margin-left: 5%;
   background:  rgb(123, 176, 265);
   color:white;
   border-radius: 22px;
@@ -120,16 +120,16 @@ button {
 }
 
 button p{
-  padding: 10 10 10 40px;
- font-family: monospace;
- font-size: 18px!important;
+  padding-top: 4px;
+  padding-right: 5px;
+  font-family: monospace;
+  font-size: 20px!important;
 
 }
 
 .flex2 {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-between;
 
 }
@@ -138,32 +138,50 @@ button p{
   background: #dddddd;
   width: 252px;
   height: 252px;
-  border-radius: 25px;
-  margin-bottom: 60px;
+  border-radius: 50px;
+  margin-bottom: 180px;
   cursor: pointer;
 }
+
 .back_banner img{
 width: 252px;
 height: 252px;
-border-radius: 20px;
+}
+
+.back_banner p {
+  margin-top: 15px;
+  height: 48px;
+  width: 252px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.back_banner h2 {
+  height: 48px;
+  width: 252px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
 }
 .banner_butt {
   display: flex;
-  margin-top: 5%;
-  margin-left: 5%;
+  margin-top: 15px;
   background:  rgb(123, 176, 265);
   color:white;
   border-radius: 22px;
-  width: 164px;
+  width: 252px;
   height: 46px;
   cursor: pointer;
+  text-decoration: none;
 }
+
+
 footer {
   display: flex;
   flex: 0 0 auto;
   justify-content: center;
   background: #333;
-  margin-top: auto;
+  margin-top: 3%;
   width: 100%;
   padding: 0%;
 
