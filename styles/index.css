@@ -40,7 +40,7 @@ header {
 }
 
 .box_header {
-  background: url(header.hui.jpg);
+  background: url(/\ Images/header.hui.jpg);
   background-size:cover;
   background-position: 1;
   background-repeat: no-repeat;
@@ -65,7 +65,7 @@ header {
 .flex1 {
   display: flex;
   height: auto;
-  margin-bottom: 15%;
+  margin-bottom: 12%;
 
 }
 
@@ -247,7 +247,6 @@ footer {
   }
   .flex1 {
     display: flex;
-    flex-wrap: wrap;  
   }
   .container {
     margin: 15px;
@@ -256,66 +255,88 @@ footer {
     flex-direction: column;
   }
   .flex2 {
+    width: 80%;
     display: flex;
-    flex-direction: column;  
   }
   .banner {
-    width: 100%;
+    background-color: red;
+    width: 252px;
+    height: 252px;
+    margin-left: auto;
   } 
+  .back_banner{
+    width: 252px;
+    height: 252px;
+    margin-left: auto;
+  }
   .main-content {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     width: 100%;
   }
-  .social-footer ul{
-    width: 100%;
-  }
-  footer{
-    width: auto;
+  footer {
+    width: 100%;  
   }
   .name{
-  width: 60%;
-  height: 50%;
-  margin-left: 60px;
-  margin-bottom: 50px;
+  width: 62%;
+  margin-left: 10px; 
+  }
+  .name h2 {
+    margin-top: 10px;
+    font-size: 40px;
   }
   .ava {
-  margin-left: 10px;
+  margin-top: 10px;
+  padding: auto;
+  width: 252px;
+  height: 252px;  
+  }
+  .ava img {
+  width: 252px;
+  height: 252px;
   }
   button{
   margin-top: 20px;
-  margin-left: 145px;
+  margin-left: 50px;
   }
-  .popup {
+  /* .popup {
 
     display: flex;
     height: 330px;
     width: 560px;
     background-color: white;
     
+  } */
   }
-}
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
- .box_header{
+
+ .box_header {
   width: 100%;
-  margin: 15px;}
+  margin: 15px;
+}
 
- .container{
-  width: 100%;}
+ .container {
+  width: 90%;
+}
 
+.back_banner{
+  width: 252px;
+  height: 252px; 
+}
  .banner{
-  width: 47%;
-  margin: 10px;}
+  background-color: white;;
+  border-radius: 50px;
+  width: 252px;
+  height: 252px;
+  margin: 7px;
+}  
 
  .flex2 {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
  }
  
- .popup-fade {
+ /* .popup-fade {
     display: none;
   }
 
@@ -356,5 +377,6 @@ footer {
   width: 100%;
   height: 100%;}
 
-}
+} */
 
+}
