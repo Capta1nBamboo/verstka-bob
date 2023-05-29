@@ -245,6 +245,9 @@ footer {
     margin: 15px;
     width: 100%;
   }
+  .box_header a {
+    width: 100%;
+  }
   .flex1 {
     display: flex;
   }
